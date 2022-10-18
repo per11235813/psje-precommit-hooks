@@ -3,5 +3,5 @@
     description: checks notebooks for output
     entry: check-notebook
     language: python
-    types: [file]
-    files: \.(ipynb)$
+    types: [ipynb]
+    #files: \.ipynb$
