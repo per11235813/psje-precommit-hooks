@@ -1,0 +1,6 @@
+-   id: check-notebook
+    name: check notebook
+    description: checks notebooks for output
+    entry: check-notebook
+    language: python
+    types: [ipynb]
