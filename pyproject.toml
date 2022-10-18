@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psje_precommit_hooks"
+version = "0.0.1"
+
+authors = [
+  { name="Per Stoffer Jensen", email="perstofferjensen@gmail.com" },
+]
+description = "My own precommit hooks"
+requires-python = ">=3.9"
+
+dependencies = [
+]
+
+[tool.black]
+line-length = 122
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "black",
+    "build",
+    "wheel",
+]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]  
